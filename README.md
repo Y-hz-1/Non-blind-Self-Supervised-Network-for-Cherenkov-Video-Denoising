@@ -29,7 +29,6 @@ It enables robust denoising under extremely low-SNR Cherenkov acquisition condit
 
 The framework consists of:
 ### Asymmetric Self-Supervised Cycle Denoising Framework
-- FastDVDnet-style burst denoising backbone
 - 5-frame temporal aggregation
 - AdaIN-based noise-prior conditioning
 - Cycle-consistent denoising–degradation learning
