@@ -33,7 +33,7 @@ The framework consists of:
 - FastDVDnet-style burst denoising backbone
 - 5-frame temporal aggregation
 - AdaIN-based noise-prior conditioning
-![Framework](figures/framework.tif)
+![Framework](Figure/F_den.png)
 ### 2. Degradation Module (`F_deg`)
 - Pix2Pix-based controllable degradation generator
 - Noise-level conditioned image translation
