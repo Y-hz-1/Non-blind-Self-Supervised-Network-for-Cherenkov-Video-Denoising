@@ -6,25 +6,6 @@ Official implementation of:
 
 ---
 
-## Overview
-
-This repository provides the official PyTorch implementation of **a non-blind self-supervised Cherenkov video denoising framework** for quantitative radiotherapy verification.
-
-The proposed framework introduces:
-
-- **Cycle-degradation adversarial learning**
-- **AOC-guided noise prior conditioning**
-- **Self-supervised video restoration**
-- **Interpretability analysis using causal effect maps**
-
-It enables robust denoising under extremely low-SNR Cherenkov acquisition conditions for:
-
-- **Dose distribution verification**
-- **Patient positioning verification**
-- **Beam-edge alignment analysis**
-
----
-
 ## Framework
 
 The framework consists of:
