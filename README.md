@@ -43,7 +43,6 @@ The framework consists of:
 ### 3. Adversarial Constraints
 - Distribution-level realism supervision
 - Cycle-consistent degradation regression
-- ![Framework](Figure/F.png)
 ---
 
 ## Repository Structure
