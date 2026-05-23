@@ -49,20 +49,27 @@ The framework consists of:
 
 ```bash
 .
-├── data/                   # Training / validation data
+├── Addnoise/
+│   ├── Addnoise_model/
+│   ├── Dnet/
+│   ├── data_argu/
+│   ├── losses/   
+│   ├── try/
+│   └── Unet/
+├── Figure/                    
+├── data/                   
 ├── models/                 # Network definitions
 │   ├── denoising/
 │   ├── degradation/
 │   └── discriminator/
-├── train/
-│   ├── train_deg.py
-│   ├── train_den.py
-│   └── finetune.py
-├── test/
-│   └── inference.py
-├── utils/
-├── checkpoints/
+├── CEM/
+├── CEM_calculation/
+├── read_cem/
+├── read_cem_self/
+├── read_cem_signal/
 ├── results/
+├── train/
+├── test/
 └── README.md
 ```
 
@@ -112,24 +119,25 @@ Due to patient privacy restrictions, clinical datasets are not publicly released
 
 ## Training
 
-### Step 1: Pretrain degradation module
+### Step 1: Pretrained Degradation Module
 
-```bash
-python train/train_deg.py
-```
+Instead of training from scratch, you can directly download the pretrained degradation model from the following link:
+
+**Download pretrained model:** [https://pan.baidu.com/s/1uR8hDrCqMT1HCBFHHev9EQ?pwd=7s7h]Extraction code: [7s7h]
+
+Please place the downloaded checkpoint in the root directory of the project.
 
 ### Step 2: Train denoising module
 
 ```bash
-python train/train_den.py
+python train.py
 ```
 
-### Step 3: Alternating finetuning
+### Step 3: CEM Computation
 
 ```bash
-python train/finetune.py
+python CEM_calculation.py
 ```
-
 ---
 
 ## Testing
@@ -137,33 +145,8 @@ python train/finetune.py
 Inference on Cherenkov video:
 
 ```bash
-python test/inference.py \
-    --input ./data/test \
-    --checkpoint ./checkpoints/model.pth
+python test.py
 ```
 
 ---
 
-## Evaluation Metrics
-
-We report:
-
-- **PSNR**
-- **SSIM**
-- **LPIPS**
-- **Gamma Passing Rate (3%/3 mm)**
-- **Dice Similarity Coefficient**
-- **Mean Distance to Conformity (MDC)**
-
----
-
-## Results
-
-The proposed method achieves:
-
-| Metric | Phantom | Clinical |
-|--------|---------|----------|
-| Gamma Passing Rate | **92.99%** | **90.09%** |
-| Position Sensitivity Improvement | **150.75%** | — |
-| Memory Consumption | **1.754 GB** | — |
-| Inference Time | **120 ms/frame** | Real-time compatible |
