@@ -77,17 +77,11 @@ conda create -n cherenkov python=3.9
 conda activate cherenkov
 ```
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 Main requirements:
 
 - Python 3.9+
 - PyTorch 2.0+
-- CUDA 11.8
+- CUDA 12.4
 - torchvision
 - numpy
 - opencv-python
@@ -100,20 +94,14 @@ Main requirements:
 ## Dataset
 
 ### Phantom Dataset
+Phantom data can be downloaded from the following link:
+
+Baidu Netdisk: [https://pan.baidu.com/s/1HKeHBwsTUbNBS9ORZNroUw?pwd=y2x6] (replace with your actual sharing link)
+Extraction code: [y2x6]
 
 Place phantom data under:
-
 ```bash
 data/phantom/
-```
-
-Expected structure:
-
-```bash
-phantom/
-    clean/
-    noisy/
-    AOC/
 ```
 
 ### Clinical Dataset
