@@ -38,11 +38,12 @@ The framework consists of:
 - Pix2Pix-based controllable degradation generator
 - Noise-level conditioned image translation
 - CBAM-enhanced decoder
+- ![Framework](Figure/F_deg.png)
 
 ### 3. Adversarial Constraints
 - Distribution-level realism supervision
 - Cycle-consistent degradation regression
-
+- ![Framework](Figure/F.png)
 ---
 
 ## Repository Structure
