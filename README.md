@@ -84,7 +84,7 @@ Main requirements:
 ### Phantom Dataset
 Phantom data can be downloaded from the following link:
 
-Baidu Netdisk: [https://pan.baidu.com/s/1HKeHBwsTUbNBS9ORZNroUw?pwd=y2x6] (replace with your actual sharing link)
+Baidu Netdisk: [https://pan.baidu.com/s/1HKeHBwsTUbNBS9ORZNroUw?pwd=y2x6]
 Extraction code: [y2x6]
 
 Place phantom data under:
@@ -104,7 +104,8 @@ Due to patient privacy restrictions, clinical datasets are not publicly released
 
 Instead of training from scratch, you can directly download the pretrained degradation model from the following link:
 
-**Download pretrained model:** [https://pan.baidu.com/s/1uR8hDrCqMT1HCBFHHev9EQ?pwd=7s7h]Extraction code: [7s7h]
+**Download pretrained model:** [https://pan.baidu.com/s/1uR8hDrCqMT1HCBFHHev9EQ?pwd=7s7h]
+Extraction code: [7s7h]
 
 Please place the downloaded checkpoint in the root directory of the project.
 
