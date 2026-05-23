@@ -28,22 +28,22 @@ It enables robust denoising under extremely low-SNR Cherenkov acquisition condit
 ## Framework
 
 The framework consists of:
-
-### 1. Denoising Module (`F_den`)
+### Asymmetric Self-Supervised Cycle Denoising Framework
 - FastDVDnet-style burst denoising backbone
 - 5-frame temporal aggregation
 - AdaIN-based noise-prior conditioning
+- Cycle-consistent denoising–degradation learning
+![Framework](Figure/F.png) 
+### 2. Architectures of Denoising Sub-networks Ux(x=1,2,3)
+- Multi-stage residual feature refinement
+- Progressive multi-scale feature extraction
+- Noise-aware feature modulation via AdaIN
 ![Framework](Figure/F_den.png)
-### 2. Degradation Module (`F_deg`)
-- Pix2Pix-based controllable degradation generator
-- Noise-level conditioned image translation
-- CBAM-enhanced decoder
+### 3. Conditional Degradation Translator (`F_deg`)
+- Pix2Pix-based image-to-image degradation modeling
+- Noise-level conditioned translation
+- CBAM-enhanced decoder for spatial–channel attention
 - ![Framework](Figure/F_deg.png)
-
-### 3. Adversarial Constraints
-- Distribution-level realism supervision
-- Cycle-consistent degradation regression
-- ![Framework](Figure/F.png)
 ---
 
 ## Repository Structure
